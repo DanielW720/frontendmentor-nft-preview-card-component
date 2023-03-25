@@ -47,9 +47,33 @@ body {
     padding: 25px;
 }
 
-.card img {
+.equilibrium-image {
+    position: relative;
+    --borderradius: 10px;
+}
+
+.image-equilibrium {
     width: 100%;
-    border-radius: 10px;
+    border-radius: var(--borderradius);
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-container:hover {
+    opacity: 1;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    border-radius: var(--borderradius);
 }
 
 article {
@@ -59,6 +83,11 @@ article {
 h1 {
     font-weight: 600;
     color: var(--white);
+}
+
+h1:hover {
+    color: var(--cyanprimary);
+    cursor: pointer;
 }
 
 p {
@@ -115,4 +144,9 @@ mark {
     background-color: inherit;
     margin-left: 2px;
     color: var(--white);
+}
+
+mark:hover {
+    color: var(--cyanprimary);
+    cursor: pointer;
 }
