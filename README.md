@@ -15,7 +15,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="screenshot.png"  width="90%" height="90%">
+<img src="screenshot.png"  width="50%" height="50%">
 
 ### Links
 
